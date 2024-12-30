@@ -324,7 +324,7 @@ while True:
             printPasswordsAsTable(passwordInfo)
 
             # Ask which password to delete
-            userChoice = input("\n\nEnter the keyword for the password that you want to delete: ")
+            userChoice = input("\n\nEnter the keyword for the password that you want to delete (enter “all” if you want to delete all the passwords): ")
 
             if userChoice == "all": # Delete all passwords
                 resetDbFile()
