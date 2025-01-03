@@ -168,7 +168,7 @@ while True:
     # Show menu and ask for input from the user
     print("\n\nWhat do you want to do?\n\n1. Generate Password\n2. Save Password\n3. Update Password\n4. View Password\n5. Delete Password\n6. Quit\n")
     userChoice = input("Enter your choice: ")
-    while not userChoice.isdigit() or int(userChoice) < 1 or int(userChoice) > 6: # The user entered unsupported value as his choice
+    while not userChoice.isdigit() or int(userChoice) < 1 or int(userChoice) > 6: # The user entered unsupported value as their choice
         userChoice = input("Please select from 1 to 6: ")
 
     # Get password data from database (in advance)
@@ -181,7 +181,7 @@ while True:
         # Ask the length of the password to be generated
         lengthOfPassword = input("\n\nEnter the length of the password that you want to create (a whole number between 8 and 32): ")
         while not lengthOfPassword.isdigit() or int(lengthOfPassword) < 8 or int(lengthOfPassword) > 32:
-            lengthOfPassword = input("The length of the password must be a whole nunber between between 8 and 32; please enter another value: ")
+            lengthOfPassword = input("The length of the password must be a whole number between between 8 and 32; please enter another value: ")
         lengthOfPassword = int(lengthOfPassword)
 
         # Generate password
@@ -345,7 +345,7 @@ while True:
             else:
                 print("\nNo password has been saved with this keyword.")
 
-    elif userChoice == "6": # Quit
+    else: # Quit
         print("\n\n\n")
         break
 
