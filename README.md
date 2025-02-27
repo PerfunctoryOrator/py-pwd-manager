@@ -1,6 +1,6 @@
 # Password Manager
 
-A simple password manager written in Python that allows users to securely store and generate passwords.
+A simple password manager written in Python that allows users to store and generate passwords
 
 ## Features
 - Securely stores passwords using `pickle`
