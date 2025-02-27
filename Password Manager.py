@@ -142,7 +142,7 @@ elif system() == "Windows": # On Windows
     filePath = path.expanduser(r"~\AppData\Roaming\pwdmanagerpy\passwords.db")
 else: # Some other OS
     filePath = "passwords.db" # Save the database alongside the program in a file visible to the user
-    print("\n\n\nIf you wish to move this program to another location, you must carry the “passwords.db” file along with this to the new location, otherwise all your saved passwords will get lost.")
+    print("\n\n\nIf you wish to move this program to another location, you must carry the ‘passwords.db’ file along with this to the new location, otherwise all your saved passwords will get lost.")
 
 # Set up the database file inside the database folder
 if not path.exists(filePath):
@@ -208,7 +208,7 @@ while True:
             passwordKey = input("Enter a unique keyword with which you can identify your password later: ")
             while passwordKey == "all" or passwordKey in db1:
                 if passwordKey == "all":
-                    passwordKey = input("The keyword can’t be “all”; please enter another keyword: ")
+                    passwordKey = input("The keyword can’t be ‘all’; please enter another keyword: ")
                 else:
                     passwordKey = input("A password has already been saved with this keyword; please enter another keyword: ")
 
@@ -228,7 +228,7 @@ while True:
         passwordKey = input("Enter a unique keyword with which you can identify your password later: ")
         while passwordKey == "all" or passwordKey in db1:
             if passwordKey == "all":
-                passwordKey = input("The keyword can’t be “all”; please enter another keyword: ")
+                passwordKey = input("The keyword can’t be ‘all’; please enter another keyword: ")
             else:
                 passwordKey = input("A password has already been saved with this keyword; please enter another keyword: ")
 
@@ -265,7 +265,7 @@ while True:
             if userChoice in db1:
 
                 # Update the password
-                password = input(f"Enter a new password for the keyword “{userChoice}”: ")
+                password = input(f"Enter a new password for the keyword ‘{userChoice}’: ")
                 db1[userChoice] = password
                 db2[userChoice] = getDateTime()
                 with open(filePath, "wb") as dbFile:
@@ -284,7 +284,7 @@ while True:
         else:
 
             # Ask user the keyword for the password that they want to view
-            userChoice = input("\n\nEnter the keyword for the password that you want to view (enter “all” if you want to view all the passwords): ")
+            userChoice = input("\n\nEnter the keyword for the password that you want to view (enter ‘all’ if you want to view all the passwords): ")
 
             if userChoice == "all":
 
@@ -324,7 +324,7 @@ while True:
             printPasswordsAsTable(passwordInfo)
 
             # Ask which password to delete
-            userChoice = input("\n\nEnter the keyword for the password that you want to delete (enter “all” if you want to delete all the passwords): ")
+            userChoice = input("\n\nEnter the keyword for the password that you want to delete (enter ‘all’ if you want to delete all the passwords): ")
 
             if userChoice == "all": # Delete all passwords
                 resetDbFile()
