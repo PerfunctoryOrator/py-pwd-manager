@@ -51,4 +51,4 @@ getRandomCharacter(group=4)  # Generates a random character from a specified gro
 Feel free to submit issues or fork the repository and submit pull requests.
 
 ## Licence
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/PerfunctoryOrator/py-pwd-manager/blob/main/LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
