@@ -11,6 +11,15 @@ A simple password manager written in Python that allows users to store and gener
 
 ## Requirements
 - Python 3.x
+- The following Python modules:
+  ```python
+  - datetime
+  - os
+  - pickle
+  - platform
+  - random
+  - time
+  ```
 
 ## Installation
 Clone this repository or download the script:
