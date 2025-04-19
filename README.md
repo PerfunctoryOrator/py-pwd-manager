@@ -3,7 +3,7 @@
 A simple password manager written in Python that allows users to store and generate passwords
 
 ## Features
-- Securely stores passwords using `pickle`.
+- Stores passwords using `pickle`.
 - Generates random passwords with uppercase, lowercase, digits, and special characters.
 - Stores password modification information in IST (GMT+5:30).
 - Provides an option to reset the password database.
